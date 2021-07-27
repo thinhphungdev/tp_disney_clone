@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+// COLORS 
+$color-dark-primary: #090b13;
+
+// BASE STYLING
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --dark: #333;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 70%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
