@@ -1,4 +1,13 @@
 import React from 'react';
+import DisneyLogo from '../assets/images/logo.svg';
+
+import HomeIcon from '../assets/images/home-icon.svg';
+import SearchIcon from "../assets/images/search-icon.svg";
+import WatchList from "../assets/images/watchlist-icon.svg";
+import Original from "../assets/images/original-icon.svg";
+import MovieIcon from "../assets/images/movie-icon.svg";
+import SeriesIcon from "../assets/images/series-icon.svg";
+import userAvartar from "../assets/images/myself.jpg";
 
 function Header() {
     return (
@@ -8,37 +17,37 @@ function Header() {
             <img 
             alt = "Disney Logo" 
             className="header__logo"
-            src="/images/logo.svg"
+            src={DisneyLogo}
             />
 
             <div className="header__menu">
                 <a className="header__menu--item">
-                    <img src="/images/home-icon.svg" alt="Home icon" />
+                    <img src={HomeIcon} alt="Home icon" />
                     <span>home</span>
                 </a>
 
                 <a className="header__menu--item">
-                    <img src="/images/search-icon.svg" alt="Home icon" />
+                    <img src={SearchIcon} alt="Home icon" />
                     <span>Search</span>
                 </a>
 
                 <a className="header__menu--item">
-                    <img src="/images/watchlist-icon.svg" alt="Home icon" />
+                    <img src={WatchList} alt="Home icon" />
                     <span>watchlist</span>
                 </a>
 
                 <a className="header__menu--item">
-                    <img src="/images/original-icon.svg" alt="Home icon" />
+                    <img src={Original} alt="Home icon" />
                     <span>original</span>
                 </a>
 
                 <a className="header__menu--item">
-                    <img src="/images/movie-icon.svg" alt="Home icon" />
+                    <img src={MovieIcon} alt="Home icon" />
                     <span>movies</span>
                 </a>
 
                 <a className="header__menu--item">
-                    <img src="/images/series-icon.svg" alt="Home icon" />
+                    <img src={SeriesIcon} alt="Home icon" />
                     <span>series</span>
                 </a>
             </div>
@@ -46,7 +55,7 @@ function Header() {
             {/* user logo */}
             <img 
             className="header__user-image" 
-            src="/images/myself.jpg"
+            src={userAvartar}
             alt="User Logo"    
             />
         </nav>

@@ -2,6 +2,10 @@
 
 // COLORS 
 $color-dark-primary: #090b13;
+$bg-color-dark: #040714;
+$border-color-light: rgba(249, 249, 249, .8);
+$border-color-dark: rgba(249, 249, 249, .1);
+$box-shadow-primary:   rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
 
 // BASE STYLING
 * {
@@ -21,6 +25,8 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: $bg-color-dark;
+    overflow-x: hidden;
 }
 
 *::after,

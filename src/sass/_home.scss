@@ -1,0 +1,17 @@
+.home {
+    min-height: calc(100vh - 70px);
+    color: var(--white);
+    position: relative;
+    padding: 0 2.8rem;
+
+    &::before {
+        background: url("../assets/images/home-background.png") no-repeat center center / cover fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        content: "";
+    }
+}  

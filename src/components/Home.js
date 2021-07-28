@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import ImageSlider from './ImgSlider.js';
+import Viewers from './Viewers.js';
 
 function Home() {
     return (
-        <div>
-            Home
-        </div>
+        <main className="home">
+            <ImageSlider />
+            <Viewers />
+        </main>
     )
 }
 

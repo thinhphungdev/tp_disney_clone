@@ -1,0 +1,41 @@
+.carousel {
+    margin-top: 2.2rem;
+
+    ul li button {
+        &::before {
+            font-size: 10px;
+            color: rgb(150, 158, 171);
+        }
+    }    
+
+    .slick-dots li.slick-active button:before {
+        color: var(--white); 
+    }
+
+    button {
+        z-index: 1;
+    }
+
+    .slick-list {
+        overflow: visible;
+    }
+
+    &__item {
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: $box-shadow-primary;
+            border: 4px solid transparent;
+            box-sizing: border-box;
+            outline-offset: 2px;
+            transition-duration: 0.2s;
+        }
+
+        &:hover {
+            outline: 4px solid $border-color-light;
+        }
+    }
+}
