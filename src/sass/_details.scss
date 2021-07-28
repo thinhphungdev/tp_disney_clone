@@ -1,0 +1,113 @@
+.details {
+    min-height: $page-min-height;
+    position: relative;
+    padding: 0 calc(3.5vw + 5px);
+
+    &__background {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.8;
+
+        img {
+            @include imgFitCover;
+        }
+    }
+
+    &__title {
+        height: 28vh;
+        width: 35vw;
+        min-height: 170px;
+        min-width: 200px;
+        margin-top: 68px;
+
+        img {
+            @include imgFitCover;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+
+        %btn-primary {
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            border: none;
+            letter-spacing: 1.8px;
+            padding: 0 24px;
+            margin-right: 24px;
+            text-transform: uppercase;
+
+            &:hover {
+                background: rgb(198, 198, 198);
+            }
+        }
+
+        &--play-btn {
+            @extend %btn-primary;
+
+            background: rgb(249, 249, 249);
+        }
+
+        &--trailer-btn {
+            @extend %btn-primary;
+
+            background: rgba(0,0,0,.3);
+            color:rgb(249, 249, 249) ;
+            border: 1px solid rgb(249, 249, 249);
+        }
+
+        %btn-secondary {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0,0,0,0.6);
+            border: 2px solid var(--white);
+            cursor: pointer;
+            margin-right: 16px;
+        }
+
+        &--add-btn {
+            @extend %btn-secondary;
+
+            span {
+                font-size: 30px;
+                color: var(--white);
+            }
+        }
+
+        &--group-btn {
+            @extend %btn-secondary;
+
+            background: var(--dark);
+        }
+    }
+
+    &__subtitle {
+        color: rgb(249, 249, 249);
+        font-size: 16px;
+        min-height: 22px;
+        margin-top: 24px;
+    }
+
+    &__description {
+        line-height: 1.4;
+        font-size: 20px;
+        margin-top: 16px;
+        color: rgb(249, 249, 249);
+        font-weight: 600;
+        max-width: 650px;
+    }
+}

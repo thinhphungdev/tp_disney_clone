@@ -1,0 +1,63 @@
+.login {
+    position: relative;
+    height: $page-min-height;
+    color: var(--white);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        content: '';
+        left: 0;
+        right: 0;
+        background-image: url("../assets/images/login-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    &__cta {
+        max-width: 650px;
+        padding: 80px 40px;
+        width: 80%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+
+        &--sign-up {
+            text-transform: uppercase;
+            width: 100%;
+            display: inline-block;
+            padding: 17px 0;
+            background: #0063e5;
+            color: #f9f9f9;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 800;
+            cursor: pointer;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+            transition: all 250ms;
+            margin-top: 8px;
+            margin-bottom: 12px;
+
+            &:hover {
+                background: #0483ee;
+            }
+        }
+
+        &--description {
+            font-size: 12px;
+            text-align: center;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+        }
+
+        
+    }
+}

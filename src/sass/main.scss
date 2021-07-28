@@ -1,8 +1,14 @@
+@import 'mixins';
 @import 'base';
-@import 'header';
+
+@import 'login';
 @import 'home';
+@import 'details';
+
+@import 'header';
 
 @import 'carousel';
 @import 'viewers';
+@import 'movies';
 
 @import 'ultilities';

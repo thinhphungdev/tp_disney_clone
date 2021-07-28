@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import SliderBadgingSrc from '../assets/images/slider-badging.jpg';
 import SliderBadagSrc from '../assets/images/slider-badag.jpg';
+import sliderScale from '../assets/images/slider-scale.jpg';
+import sliderScales from '../assets/images/slider-scales.jpg';
 
 function ImgSlider() {
     const settings = {
@@ -25,6 +27,14 @@ function ImgSlider() {
 
             <div className="carousel__item">
                 <img alt="" src={SliderBadagSrc} />
+            </div>
+
+            <div className="carousel__item">
+                <img alt="" src={sliderScale} />
+            </div>
+
+            <div className="carousel__item">
+                <img alt="" src={sliderScales} />
             </div>
         </Slider>
     )
