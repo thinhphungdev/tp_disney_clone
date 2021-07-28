@@ -30,7 +30,7 @@ function Header() {
                 photo: user.photoURL
             }))
 
-            history.push("/")
+            history.push("/home")
         })
         .catch(err => console.log(err))
     }
@@ -39,7 +39,7 @@ function Header() {
         auth.signOut()
         .then(() => {
             dispatch(setSignOut())
-            history.replace("/login")
+            history.replace("/")
         })
     }
 
@@ -52,7 +52,7 @@ function Header() {
                     photo: user.photoURL
                 }))
     
-                history.push("/")
+                history.push("/home")
             }
         })
 

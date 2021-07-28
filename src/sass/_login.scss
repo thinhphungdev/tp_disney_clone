@@ -1,6 +1,6 @@
 .login {
     position: relative;
-    height: $page-min-height;
+    height: calc(100vh - 4px);
     color: var(--white);
 
     &::before {

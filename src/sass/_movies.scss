@@ -9,6 +9,10 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 25px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
   
     &__item {
       border-radius: 10px;
@@ -25,12 +29,12 @@
       &:hover {
         @include hoverItemEffect;
       }
+
+          
+      @media screen and (max-width: 768px) {
+        margin: 0 auto;
+        width: 80%;
+      }
     }
   }  
-}
-
-@media screen and (max-width: 768px) {
-  .movies-contents {
-    grid-template-columns: repeat(1fr, minmax(0, 1fr));
-  }
 }
