@@ -1,13 +1,15 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import 'firebase/firestore';
+import 'firebase/firebase-auth';
+import 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDKeI0l_l0ZisKReL4a477ZvofNxQ6hGXs",
-  authDomain: "https://tp-disney-clone.web.app/",
+  authDomain: "tp-disney-clone.firebaseapp.com",
   projectId: "tp-disney-clone",
-  storageBucket: "https://tp-disney-clone.appspot.com/",
+  storageBucket: "tp-disney-clone.appspot.com",
   messagingSenderId: "38936321497",
-  appId: "1:37918794208:web:dbe9842dfe1dda522a4b85",
-  measurementId: "G-DRVLJKWRWG",
+  appId: "1:38936321497:web:3fa7020bf232484bce0dc8"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

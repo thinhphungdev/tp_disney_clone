@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const MoviesList = () => {
     const movies = useSelector(state => state.movies.movies);
     console.log(movies)
+    
     return (
         <div className="movies-container">
             <h4>Recommended for You</h4>
